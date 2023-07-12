@@ -1,8 +1,8 @@
 package frc.robot.humanIO;
 
-import edu.wpi.first.wpilibj.PS4Controller.Button;
 import edu.wpi.first.wpilibj2.command.button.JoystickButton;
 import frc.robot.Constants;
+import frc.robot.humanIO.PS5Controller.Button;
 
 public class Joysticks {
 

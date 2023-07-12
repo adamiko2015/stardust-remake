@@ -15,13 +15,20 @@ package frc.robot;
 public final class Constants {
   
   public static class DrivetrainConstants {
-    public static final int TALON_L_PORT = 0;
-    public static final int TALON_R_PORT = 0;
+    public static final int TALON_L_CANID = 6;
+    public static final int TALON_R_CANID = 1;
     
-    public static final int VICTOR_LF_PORT = 0;
-    public static final int VICTOR_LB_PORT = 0;
-    public static final int VICTOR_RF_PORT = 0;
-    public static final int VICTOR_RB_PORT = 0;
+    public static final int VICTOR_LF_CANID = 3;
+    public static final int VICTOR_LB_CANID = 2;
+    public static final int VICTOR_RF_CANID = 4;
+    public static final int VICTOR_RB_CANID = 5;
+  }
+
+  public static class PizzaConstants {
+    public static final int TALON_CANID = 10;
+
+    public static final double CLOCKWISE_PERCENT = 0.4;
+    public static final double COUNTER_CLOCKWISE_PERCENT = -1.0;
   }
 
   public static class Joysticks {
