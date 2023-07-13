@@ -1,6 +1,5 @@
 package frc.robot.subsystems;
 
-import com.ctre.phoenix.motorcontrol.IMotorController;
 import com.ctre.phoenix.motorcontrol.TalonSRXControlMode;
 import com.ctre.phoenix.motorcontrol.can.TalonSRX;
 import com.ctre.phoenix.motorcontrol.can.VictorSPX;
@@ -24,11 +23,11 @@ public class Drivetrain extends SubsystemBase {
         this._victorRB = new VictorSPX(Constants.DrivetrainConstants.VICTOR_RB_CANID);
 
         // Define followers
-        this._victorLB.follow((IMotorController) _talonL);
-        this._victorLF.follow((IMotorController) _talonL);
+        this._victorLB.follow(_talonL);
+        this._victorLF.follow(_talonL);
 
-        this._victorRB.follow((IMotorController) _talonR);
-        this._victorRF.follow((IMotorController) _talonR);
+        this._victorRB.follow(_talonR);
+        this._victorRF.follow(_talonR);
 
         this._talonR.setInverted(true);
     }

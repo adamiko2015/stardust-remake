@@ -31,6 +31,23 @@ public final class Constants {
     public static final double COUNTER_CLOCKWISE_PERCENT = -1.0;
   }
 
+  public static class ExtractorConstants {
+    public static final int TALON_CANID = 8;
+
+    public static final double EXTRACT_PERCENT = 0;
+  }
+
+  public static class ShooterConstants {
+    public static final int LEFT_SPARKMAX_CANID = 14;
+    public static final int RIGHT_SPARKMAX_CANID = 12;
+
+    public static final double PEAK_CURRENT = 0;
+
+    public static final double SHOOT_PERCENT = 0;
+
+    public static final double kF = 0, kP = 0, kD = 0, kI = 0;
+  }
+
   public static class Joysticks {
     public static final double DEADBAND = 0;
   }
