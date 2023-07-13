@@ -8,7 +8,7 @@ import frc.robot.motors.DBugSparkMax;
 import frc.robot.motors.PIDFGains;
 
 public class Shooter extends SubsystemBase {
-    
+    // TODO: ADD PID!!!!!!!
     private DBugSparkMax _left_motor, _right_motor;
     private ShooterState _state;
     
