@@ -4,6 +4,8 @@
 
 package frc.robot;
 
+import frc.robot.motors.PIDFGains;
+
 /**
  * The Constants class provides a convenient place for teams to hold robot-wide numerical or boolean
  * constants. This class should not be used for any other purpose. All constants should be declared
@@ -41,11 +43,17 @@ public final class Constants {
     public static final int LEFT_SPARKMAX_CANID = 14;
     public static final int RIGHT_SPARKMAX_CANID = 12;
 
-    public static final double PEAK_CURRENT = 0;
+    public static final int PEAK_CURRENT = 0;
 
-    public static final double SHOOT_PERCENT = 0;
+    public static final double TOLERANCE = 100;
 
-    public static final double kF = 0, kP = 0, kD = 0, kI = 0;
+    public static class State {
+      public static class Shoot {
+        public static final double SHOOT_VELOCITY = 4000;
+        public static final PIDFGains GAINS_LEFT = new PIDFGains(0.0002, 0.0, 0.03, 0.000183, TOLERANCE);
+        public static final PIDFGains GAINS_RIGHT = new PIDFGains(0.0005, 0.0, 0.0, 0.00215, TOLERANCE);
+      }
+    }
   }
 
   public static class Joysticks {
